@@ -1,0 +1,11 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: bt-net-assignment
+  description: Brand Tech .NET Assignment - This test is to test a candidates basic knowledge of .NET.
+  annotations:
+    github.com/project-slug: BESTSELLER/bt-net-assignment
+spec:
+  type: service
+  lifecycle: experimental
+  owner: brand-tech
