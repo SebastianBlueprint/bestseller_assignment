@@ -1,5 +1,5 @@
 using Microsoft.EntityFrameworkCore;
-using ProductLogicService.Models;
+using ProductLogicService.Library.Models;
 
 namespace ProductLogicService.Repositories;
 

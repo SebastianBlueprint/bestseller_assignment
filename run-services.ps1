@@ -1,5 +1,6 @@
 $projects = @(
     "src\ProductLogicService\ProductLogicService.csproj"
+    "src\Gateway\Gateway.csproj"
 )
 
 foreach ($project in $projects) {

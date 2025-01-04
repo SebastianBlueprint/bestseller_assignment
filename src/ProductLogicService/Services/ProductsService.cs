@@ -1,4 +1,4 @@
-using ProductLogicService.Models;
+using ProductLogicService.Library.Models;
 using ProductLogicService.Repositories;
 using ProductLogicService.Interfaces;
 using Microsoft.EntityFrameworkCore;

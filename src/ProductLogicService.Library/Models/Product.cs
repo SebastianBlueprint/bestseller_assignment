@@ -1,4 +1,4 @@
-namespace ProductLogicService.Models;
+namespace ProductLogicService.Library.Models;
 
 public class Product
 {

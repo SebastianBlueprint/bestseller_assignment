@@ -1,5 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
-using ProductLogicService.Models;
+using ProductLogicService.Library.Models;
 using ProductLogicService.Interfaces;
 
 namespace ProductLogicService.Controllers;
