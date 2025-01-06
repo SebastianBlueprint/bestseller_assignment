@@ -27,7 +27,7 @@ public class ProductsController : ControllerBase
         if (Guid.TryParse(id, out Guid guid))
             return await _productsService.GetProductAsync(guid, cancellationToken);
 
-        return new BadRequestObjectResult("Id was not a valid Guid");
+        return new BadRequestObjectResult("Id is not valid");
     }
 
     [HttpPost]

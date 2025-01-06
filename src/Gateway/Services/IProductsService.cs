@@ -8,5 +8,5 @@ public interface IProductsService
 
     Task<Product> GetProductAsync(string id);
 
-    Task<string> PostProductAsync(Product newProduct);
+    Task<string> PostProductAsync(ProductDTO newProductDTO);
 }

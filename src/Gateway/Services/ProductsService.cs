@@ -27,8 +27,18 @@ public class ProductsService : IProductsService
         return product;
     }
 
-    public async Task<string> PostProductAsync(Product newProduct)
+    public async Task<string> PostProductAsync(ProductDTO newProductDTO)
     {
+        Product newProduct = new Product
+        {
+            Id = Guid.NewGuid(),
+            Name = newProductDTO.Name,
+            Price = newProductDTO.Price,
+            Description = newProductDTO.Description,
+            Image = newProductDTO.Image,
+            Stars = newProductDTO.Stars
+        };
+        
         var products = await $"{BASEURL}/api/products".PostJsonAsync(newProduct).ReceiveString();
 
         ArgumentNullException.ThrowIfNull(products);
